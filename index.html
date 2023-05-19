@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-   
+   <div id="dis" style="margin-top: 20px;"></div>
     <script>
         class students{
             constructor(Height,Weight,Age,Color){
@@ -18,7 +18,8 @@
 
             }
           funct(){
-            console.log(`My weight is ${this.Weight}and my age is  ${this.Age}. Also, I am  ${this.Color} in complexion. `)
+          dis.innerHTML +=  `
+         <div> My weight is ${this.Weight} kg and I am  ${this.Age} years old. Also, I am  ${this.Color} in complexion. </div>`
           }  
 
         }
